@@ -1,11 +1,11 @@
-# 📄 PDF Question Answering Chatbot (LangChain + HuggingFace)
+# PDF Question Answering Chatbot (LangChain + HuggingFace)
 
 This project is an interactive **PDF Question Answering Chatbot** built with **LangChain**, **HuggingFace models**, and **Gradio**. 
 It allows users to upload a PDF file, processes the document into chunks, creates embeddings, and uses a language model to answer user queries based on the PDF content.
 
 ---
 
-## 🚀 Features
+## Features
 - **PDF Loading**: Reads and extracts text from PDFs using `PyPDFLoader`.
 - **Text Splitting**: Uses `RecursiveCharacterTextSplitter` to break text into overlapping chunks for better context.
 - **Embeddings**: Generates embeddings using `sentence-transformers/all-MiniLM-L6-v2`.
@@ -15,7 +15,7 @@ It allows users to upload a PDF file, processes the document into chunks, create
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository**
 ```bash
@@ -42,7 +42,7 @@ export HUGGINGFACEHUB_API_TOKEN=your_hf_token
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 - `langchain`
 - `langchain_community`
 - `faiss-cpu`
@@ -57,7 +57,7 @@ pip install langchain langchain_community faiss-cpu gradio sentence-transformers
 
 ---
 
-## ▶️ Usage
+## Usage
 Run the chatbot locally:
 ```bash
 python app.py
@@ -69,7 +69,7 @@ This will start a **Gradio** web interface where you can:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 .
 ├── app.py              # Main application script
@@ -79,14 +79,14 @@ This will start a **Gradio** web interface where you can:
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 You can modify the following in the script:
 - `LLM_MODEL_NAME`: Change the HuggingFace LLM model (e.g., `mistralai/Mistral-7B-Instruct-v0.1`).
 - `EMBEDDING_MODEL_NAME`: Change the embeddings model.
 
 ---
 
-## 📌 Example
+## Example
 Upload a **research paper** and ask:
 > "What is the main conclusion of this paper?"
 
@@ -94,12 +94,12 @@ The chatbot retrieves relevant sections and answers using the chosen LLM.
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the MIT License.
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 - [LangChain](https://www.langchain.com/)
 - [HuggingFace](https://huggingface.co/)
 - [Gradio](https://www.gradio.app/)
